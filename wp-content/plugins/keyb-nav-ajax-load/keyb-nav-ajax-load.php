@@ -36,8 +36,6 @@ echo '<link rel="prerender" href="'.$next_link.'" />
 <script src="http://balupton.github.com/jquery-scrollto/scripts/jquery.scrollto.min.js"></script>
 <!-- History.js -->
 <script src="http://balupton.github.com/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
-<!-- Keyboard.js -->
-<script src="https://raw.github.com/raul72/keyb/master/keyb.js"></script>
 <script type="text/javascript">
 	(function(window, undefined) {
 		// Prepare our Variables
@@ -91,7 +89,7 @@ echo '<link rel="prerender" href="'.$next_link.'" />
 				var $this = $(this);
 
 				// Ajaxify
-				$this.find('a:internal:not(.no-ajaxy)').click(function(event) {
+				$this.find('nav#nav-single a').click(function(event) {
 					// Prepare
 					var $this = $(this), url = $this.attr('href'), title = $this.attr('title') || null;
 
